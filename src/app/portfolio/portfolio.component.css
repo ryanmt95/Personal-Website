@@ -1,0 +1,41 @@
+.container {
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.background{
+  background-color:#6B7A8F;
+}
+
+.padding{
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.text{
+  /* font-size:1.3vw; */
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color:rgba(0,0,0,0.7);
+}
+
+.banner{
+  color:white;
+  font-size:calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.line-design{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  background: white;
+  min-width: 2px;
+  margin-top:calc(-3px + (5 + 3) * ((100vw - 300px) / (1600 - 300)));
+}

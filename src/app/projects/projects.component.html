@@ -1,0 +1,37 @@
+<app-header
+  [active]="active">
+</app-header>
+<div class="container">
+    <div style="width:80%;margin:auto;">
+      <h1 class="title">
+        I am a Software Engineer.
+      </h1>
+    </div>
+    <div style="padding-top:3rem;padding-bottom:10rem;">
+      <h4 style="padding:0 2em;font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));font-weight:450;">Currently working as an intern @ Tribalist in San Francisco</h4>
+    </div>
+</div>
+<div class="container" style="margin-bottom:2rem;padding:0 8vw">
+  <div>
+    <h4 class="lines"><span style="padding: 10px 20px;font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));font-weight:450">
+      Internships</span></h4>
+  </div>
+  <div class="container-row" style="padding-bottom:2rem;">
+    <div class="tribalist outline" [routerLink]="['/projects/tribalist']" style="cursor:pointer">
+      <img class="responsive" src="assets/img/tribalist.png" alt="Tribalist" style="height:4rem;">
+    </div>
+    <div class="surf" [routerLink]="['/projects/surf']" style="cursor:pointer">
+      <img class="responsive" src="assets/img/surf.webp" alt="SURF" style="height:4rem">
+    </div>
+  </div>
+  <div>
+    <h4 class="lines"><span style="padding: 10px 20px;font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));font-weight:450">Projects</span></h4>
+  </div>
+  <div class="container-row" style="">
+    <div class="portfolio" [routerLink]="['/projects/portfolio']" style="cursor:pointer">
+      <h2 style="font-size:2.5rem;margin-bottom:0;padding-right:3rem;font-weight:450;">Portfolio</h2>
+      <span class="line-design"></span>
+      <h2 style="margin-top:0;font-size:2.5rem;padding-left:3rem;font-weight:450;">Website</h2>
+    </div>
+  </div>
+</div>

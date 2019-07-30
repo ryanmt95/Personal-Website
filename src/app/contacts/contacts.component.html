@@ -1,0 +1,31 @@
+<app-header
+  [active]="active">
+</app-header>
+<div class="background" style="margin-top:2rem;padding-top:7rem;padding-bottom:7rem;">
+  <div class="container">
+    <div class="title">CONTACT</div>
+  </div>
+</div>
+<form class="container column padvertical" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+    <label class="text" for="name">
+      Name
+    </label><br/>
+    <input class="outline" id="name" type="text" formControlName="name">
+  </div>
+  <div style="padding-top:0.5em;">
+    <label class="text" for="email">
+      Email
+    </label><br/>
+    <input class="outline" id="email" type="text" formControlName="email">
+  </div>
+  <div style="padding-top:0.5em;">
+    <label class="text" for="message">
+      Message
+    </label><br/>
+    <textarea class="outline" name="message" formControlName="message" rows="10" cols="50"></textarea>
+  </div>
+  <div style="text-align:left;">
+    <button class="button outline" type="submit"><a class="text" style="color:white">Submit</a></button>
+  </div>
+</form>

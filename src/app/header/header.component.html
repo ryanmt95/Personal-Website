@@ -1,0 +1,43 @@
+<!-- fullsize nav bar-->
+<div class="header" *ngIf="resize=='full'">
+  <div class="section-header">
+    <a style="padding-left:3em" [appStyle]="'black'">
+      <span [ngStyle]="{color: onActive('Projects')}" [routerLink]="['/']" class="outline">Projects</span>
+    </a>
+    <a class="section" style="padding-left:2em" [appStyle]="'black'">
+      <span [ngStyle]="{color: onActive('Bio')}" [routerLink]="['/bio']" class="outline">Bio</span>
+    </a>
+    <a class="section" style="padding-left:2em" [appStyle]="'black'">
+      <span [ngStyle]="{color: onActive('Hobbies')}" [routerLink]="['/hobbies']" class="outline">Hobbies</span>
+    </a>
+  </div>
+  <a class="title" [appStyle]="'black'"><span [routerLink]="['/']" class="outline">RYAN MICHAEL TAN</span></a>
+  <div class="section-header">
+    <a style="padding-right:3em" [appStyle]="'black'">
+      <span [ngStyle]="{color: onActive('Let\'s Chat')}" [routerLink]="['/contacts']" class="outline">Let's Chat</span>
+    </a>
+  </div>
+</div>
+<!-- small width nav bar-->
+<div class="header" *ngIf="resize=='small'">
+  <div class="dropdown">
+    <img class="menu" src="assets/img/menu.png" alt="menu" (click)="onPress()">
+    <div class="dropdown-content" [ngStyle]="{display: (dropdown == true) ? 'block' : 'none'}">
+      <a [appStyle]="'black'">
+        <span [ngStyle]="{color: onActive('Projects')}" [routerLink]="['/']" class="outline">Projects</span>
+      </a>
+      <a class="section" [appStyle]="'black'">
+        <span [ngStyle]="{color: onActive('Bio')}" [routerLink]="['/bio']" class="outline">Bio</span>
+      </a>
+      <a class="section" [appStyle]="'black'">
+        <span [ngStyle]="{color: onActive('Hobbies')}" [routerLink]="['/hobbies']" class="outline">Hobbies</span>
+      </a>
+    </div>
+  </div>
+  <a class="title" [appStyle]="'black'"><span [routerLink]="['/']" class="outline">RYAN MICHAEL TAN</span></a>
+  <div class="section-header">
+    <a style="padding-right:3em" [appStyle]="'black'">
+      <span [ngStyle]="{color: onActive('Let\'s Chat')}" [routerLink]="['/contacts']" class="outline">Let's Chat</span>
+    </a>
+  </div>
+</div>
